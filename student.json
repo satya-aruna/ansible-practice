@@ -1,0 +1,46 @@
+{
+    "students": [
+        {
+            "firstname": "Aruna",
+            "dob": "1981-04-12",
+            "addresses": [
+                {
+                    "type": "perm",
+                    "flatnumber": 159,
+                    "community":"Panorama",
+                    "locality": "Ameenpur",
+                    "city": "Hyderabad"
+                },
+                {
+                    "type": "current",
+                    "flatnumber": 159,
+                    "community":"Panorama",
+                    "locality": "Ameenpur",
+                    "city": "Hyderabad"
+                }
+            ],
+            "skills": ["java","devops","python"]
+        },
+        {
+            "firstname": "Aruna",
+            "dob": "1981-04-12",
+            "addresses": [
+                {
+                    "type": "perm",
+                    "flatnumber": 159,
+                    "community":"Panorama",
+                    "locality": "Ameenpur",
+                    "city": "Hyderabad"
+                },
+                {
+                    "type": "current",
+                    "flatnumber": 159,
+                    "community":"Panorama",
+                    "locality": "Ameenpur",
+                    "city": "Hyderabad"
+                }
+            ],
+            "skills": ["java","devops","python"]
+        }  
+    ] 
+}

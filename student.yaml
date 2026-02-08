@@ -1,0 +1,31 @@
+- name: "Aruna"
+  dob: "1981-04-12"
+  mobileno: 123456789
+  addresses:
+  - flatnumner: 159
+    street: "Panorama"
+    locality: "Ameenpur"
+    city: "Hyderabad"
+    type: "Perm"
+  - flatnumner: 159
+    street: "Panorama"
+    locality: "Ameenpur"
+    city: "Hyderabad"
+    type: "current"
+- name: "Aruna"
+  dob: "1981-04-12"
+  mobileno: 123456789
+  addresses:
+  - flatnumner: 159
+    street: "Panorama"
+    locality: "Ameenpur"
+    city: "Hyderabad"
+    type: "Perm"
+  - flatnumner: 159
+    street: "Panorama"
+    locality: "Ameenpur"
+    city: "Hyderabad"
+    type: "current"
+
+
+

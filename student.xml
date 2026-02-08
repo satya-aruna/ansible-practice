@@ -1,0 +1,42 @@
+<students>
+    <student>
+        <firstname></firstname>
+        <dob></dob>
+        <email></email>
+        <!--<address object-->
+        <addresses>
+            <currentaddress>
+                <flatno></flatno>
+                <apartment></apartment>
+                <locality></locality>
+                <city></city>
+            </currentaddress>
+            <permaddress>
+                <flatno></flatno>
+                <apartment></apartment>
+                <locality></locality>
+                <city></city>
+            </permaddress>
+        </addresses>
+    </student>
+    <student>
+        <firstname></firstname>
+        <dob></dob>
+        <email></email>
+        <!--<address object-->
+        <addresses>
+            <currentaddress>
+                <flatno></flatno>
+                <apartment></apartment>
+                <locality></locality>
+                <city></city>
+            </currentaddress>
+            <permaddress>
+                <flatno></flatno>
+                <apartment></apartment>
+                <locality></locality>
+                <city></city>
+            </permaddress>
+        </addresses>
+    </student>
+</students>
