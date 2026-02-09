@@ -44,5 +44,5 @@
       student_yaml: "{{ lookup('file','student.yaml') | from_yaml }}"
 
   - name: conver yaml to json
-    ansible.builtin.to_json:
-      "{{ student_yaml | to_nice_json }}" 
+    ansible.builtin.debug:
+      msg: "{{ student_yaml | to_nice_json }}" 
