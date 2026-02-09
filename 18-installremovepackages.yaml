@@ -1,5 +1,5 @@
 - name: Insatall and remove Packages
-  hosts: localhost
+  hosts: local
   connection: local
   become: yes
   tasks:
