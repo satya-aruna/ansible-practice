@@ -44,5 +44,13 @@
       student_yaml: "{{ lookup('file','student.yaml') | from_yaml }}"
 
   - name: conver yaml to json
-    ansible.builtin.debug:
-      msg: "{{ student_yaml | to_nice_json }}" 
+    ansible.builtin.set_fact:
+      student_json: "{{ student_yaml | to_nice_json }}" 
+
+  - name: Clean and format escaped JSON
+    set_fact:
+        clean_json: "{{ student_json | from_json | to_nice_json }}"
+
+  - name: Display the result
+    debug:
+      var: clean_json
