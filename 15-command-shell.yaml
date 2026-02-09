@@ -16,3 +16,10 @@
   - name: print users_output
     ansible.builtin.debug:
       msg: "{{ listing }}"
+
+  - name: command module tests
+    ansible.builtin.shell: ls -lrt > files.txt && cat files.txt
+    register: files
+  - name: print files
+    ansible.builtin.debug:
+      msg: "{{ files }}"
