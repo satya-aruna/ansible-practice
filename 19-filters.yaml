@@ -45,7 +45,7 @@
 
   - name: conver yaml to json
     ansible.builtin.set_fact:
-      student_json: "{{ student_yaml | to_json }}" 
+      student_json: "{{ student_yaml | to_json(indent=4, sort_keys=True) }}" 
 
   - name: Clean and format escaped JSON
     set_fact:
