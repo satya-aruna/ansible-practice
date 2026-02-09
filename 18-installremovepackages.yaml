@@ -6,7 +6,7 @@
   - name: install Packages
     ansible.builtin.package:
       name: "{{ item.name }}"
-      state: "{{ tem.state }}"
+      state: "{{ item.state }}"
     loop: # list of maps
     - { name: mysql, state: absent } # map /dictionary
     - { name: nginx, state: present }
