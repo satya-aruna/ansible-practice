@@ -13,11 +13,11 @@
   - name: command module tests
     ansible.builtin.command: ls -lrt
     register: listing
-  - name: print users_output
+  - name: print long listing
     ansible.builtin.debug:
       msg: "{{ listing }}"
 
-  - name: command module tests
+  - name: shell module tests
     ansible.builtin.shell: ls -lrt > files.txt && cat files.txt
     register: files
   - name: print files
