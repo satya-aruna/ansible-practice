@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    NAME: Ansible from Play
+    NAME: "Ansible from Play"
   vars_files:
   - course.yaml
   vars-prompt:
@@ -12,7 +12,7 @@
   tasks:
   - name: print name
     vars:
-      NAME: Ansible from task
+      NAME: "Ansible from task"
     ansible.builtin.debug:
       msg: "Hi {{ NAME }}"
 
