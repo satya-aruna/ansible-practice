@@ -38,3 +38,11 @@
   - name: convert list to map
     ansible.builtin.debug:
       msg: "{{ tagslist | items2dict }}"  
+
+  - name: read from yaml file
+    ansible.builtin.set_fact: #setting the variable dynamically
+      student_yaml: "{{ lookup('file','student.yaml') | from_yaml }}"
+
+  - name: conver yaml to json
+    ansible.builtin.to_json:
+      "{{ student_yaml | to_nice_json }}" 
