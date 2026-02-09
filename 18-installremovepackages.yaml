@@ -1,0 +1,13 @@
+- name: Insatall and remove Packages
+  hosts: localhost
+  connection: local
+  become: yes
+  tasks:
+  - name: install Packages
+    ansible.builtin.package:
+      name: "{{ item.name }}"
+      state: "{{ tem.state }}"
+    loop:
+    - { name: mysql, state: absent }
+    - { name: nginx, state: present }
+    - { name: zip, state: absent }
