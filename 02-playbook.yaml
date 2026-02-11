@@ -1,5 +1,5 @@
 - name: Hello World
-  hosts : wlocal
+  hosts : local
   connection: local
   tasks :
   - name: print hello World
