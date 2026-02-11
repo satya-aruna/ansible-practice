@@ -4,7 +4,7 @@
   vars:
     topics: linux,shell,ansible,terraform
     course: "DevSecOps with AWS"
-    myIP: 246.897.560.34
+    myIP: 193.235.146.79
     tagsmap:
       name: Ansible
       project: Roboshop
@@ -60,4 +60,3 @@
   - name: check ipv4
     ansible.builtin.debug:
       msg: "{{ myIP | ansible.utils.ipv4 }}"
-      
