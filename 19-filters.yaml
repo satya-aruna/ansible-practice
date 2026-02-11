@@ -3,6 +3,7 @@
   connection: local
   vars:
     topics: linux,shell,ansible,terraform
+    course: "DevSecOps with AWS"
     tagsmap:
       name: Ansible
       project: Roboshop
@@ -47,10 +48,10 @@
     ansible.builtin.debug:
       msg: "{{ student_yaml | to_nice_json }}" 
 
-  # - name: Clean and format escaped JSON
-  #   set_fact:
-  #       clean_json: "{{ student_json | from_json | to_nice_json }}"
+  - name: convert to uppercase
+    ansible.builtin.debug:
+      msg: "{{ course | upper }}"
 
-  # - name: Display the result
-  #   debug:
-  #     var: clean_json
+  - name: convert to lowercase
+    ansible.builtin.debug:
+      msg: "{{ course | lower }}"
